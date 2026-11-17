@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff1f6" />
+  <meta name="description" content="내 피부에 딱 맞는 파운데이션 양을 찾아보는 뷰티 게임" />
+  <title>오늘의 파운데이션 양조절 ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand" data-action="home" aria-label="메인으로 이동"><span class="brand-heart">♥</span> 오늘의 양조절</button>
+      <div class="topbar-right">
+        <span class="save-state" id="save-state">내 기록 저장 중</span>
+        <button class="icon-button" data-action="home" aria-label="홈으로"><span>⌂</span></button>
+      </div>
+    </header>
+    <main id="app" aria-live="polite"></main>
+    <footer class="footer-note">오늘도 나에게 꼭 맞는 예쁜 양을 찾아봐요 ♡</footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
